@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input</title>
+    <script>
+      var yakin = confirm("Apakah kamu yakin akan mengunjungi facebook?");
+
+      if (yakin) {
+        window.location = "https://www.facebook.com";
+      } else {
+        document.write("Baiklah, tetap di sini saja ya :)");
+      }
+      // dialoog form
+      var nama = prompt("Siapa nama kamu?", "");
+      document.write("<p>Hello " + nama + "</p>");
+    </script>
+  </head>
+  <body>
+    <!--
+        Berdasarkan contoh-contoh di atas, kita bisa mengetahui… Kapan waktu yang tepat untuk menggunakan alert(), confirm() dan prompt().
+
+Saat kita hanya ingin menampilkan informasi saja, maka gunakan alert().
+
+Saat kita ingin jawaban konfirmasi dari pengguna, maka gunakan confirm().
+
+…dan apabila kita ingin mengambil data teks dari pengguna, maka gunakan prompt().
+    -->
+  </body>
+</html>
