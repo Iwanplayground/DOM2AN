@@ -33,3 +33,26 @@ judul.setAttribute("name", "iwan");
 // misal nambahin class baru
 const p2 = document.querySelector(".p2");
 p2.classList.add("label"); // ngecek kalo p2 punya lebel belum itu toogle kek mota matiin lampu
+
+// misal mau namabhin prgrph baru dibwh parag 3
+const pNew = document.createElement("p");
+const teksPNew = document.createTextNode("paragraf yg baru");
+// kan 2 node itu gaada hubungannya nah mari kita simpan kedalam paragraf
+pNew.appendChild(teksPNew);
+// simpan pNew di akhir section a
+
+// ingat aja rangkainnya sama kek analogi vas bunga
+const sectionA = document.getElementById("a");
+sectionA.appendChild(pNew);
+
+// skarang coba bikin list baru
+
+const liBaru = document.createElement("li");
+const teksLiBaru = document.createTextNode("ini item baru");
+liBaru.appendChild(teksLiBaru);
+// rangkai di ruang tamu ambil si vasbunga
+
+const ul = document.querySelector("section#b ul");
+const li2 = ul.querySelector("section#b ul li:nth-child(2)");
+
+ul.insertBefore(liBaru, li2);
